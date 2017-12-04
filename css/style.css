@@ -930,7 +930,7 @@ section.mid-w3layouts a:hover {
     font-size: 2em;
     color: #fff;
     text-align: center;
-    padding: 6em 0 0;
+    padding: 3em 0 0;
 }
 .w3agile-text.w3agile-text-small h5, .grid_w3l .w3agile-text h5 {
     font-size: 2em;
@@ -3603,4 +3603,184 @@ a.callbacks_nav.callbacks1_nav.prev {
 }
 .reflection-container .reflection-grid-cell-100:hover ~ .reflection-content:before {
   transform: translateY(-25%);
+}
+
+.ldBar-label {
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: 400;
+    text-align:center;
+  }
+
+.ldBar-label2 {
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: 400;
+    text-align:center;
+  }
+
+  .hide-those-stars #home canvas {
+    display: none !important;
+}
+
+.show-stars #home canvas {
+    opacity: 1;
+}
+
+#skills {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: #3a393f;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.skills-overlay-fluid {
+    background-color: rgba(41, 41, 41, 0.68);
+    width: 100%;
+    padding: 200px 0px 350px 0px;
+    color: #fff;
+}
+
+.work-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 150px 100px 300px 100px;
+    color: #fff;
+}
+
+section {
+    margin: 125px -85px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+}
+
+section:nth-child(odd) {
+    /* background: #000; */
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+    margin-top: -370px;
+    box-shadow: 0px -2px 3px rgba(0,0,0,0.4);
+}
+
+section:nth-child(even) {
+    /* background: #e90089; */
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;
+    margin-top: -112px;
+    box-shadow: 0px -1px 3px rgba(0,0,0,0.4);
+}
+
+#work {
+    background: url(../images/workbg.jpg) no-repeat 100% 100%;
+    background-size: cover;
+    position: relative;
+}
+
+#classes {
+    background: url(../images/gg6.jpg) no-repeat 100% 100%;
+    background-size: cover;
+    position: relative;
+}
+
+#gallery {
+    background: url(../images/skills.jpg) no-repeat 100% 100%;
+    background-size: cover;
+    position: relative;
+}
+
+
+.bangbang {
+    transform: rotate(-5deg);
+}
+.chikobiko {
+    transform: rotate(5deg);
+}
+.main_area {
+    width: 100%;
+    overflow: hidden;
+}
+
+#portfolio {  
+    margin: 1rem 0;
+    -webkit-column-count: 3; 
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    -webkit-column-width: 33.33333333333333%;
+    -moz-column-width: 33.33333333333333%;
+    column-width: 33.33333333333333%;
+}
+.tile { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+
+}
+.tile:hover { 
+
+}
+
+.scale-anm {
+  transform: scale(1);
+  margin-bottom: 1rem;
+}
+
+
+
+
+.tile img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    
+  
+}
+
+.btn {
+    font-family: Lato;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: .5rem 1rem;
+    margin: 0;
+    height: auto;
+    border: 1px solid;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: #555;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3);
 }

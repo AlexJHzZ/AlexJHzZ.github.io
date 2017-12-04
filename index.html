@@ -17,10 +17,13 @@ Author: Alejandro Hernandez
 
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/loading-bar.css" rel="stylesheet">
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" /><!--gallery-popup-css-->
 <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" /><!-- Pop-up -->
+<link rel="stylesheet" href="css/iconate.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+
 
 
 </head>
@@ -65,7 +68,7 @@ Author: Alejandro Hernandez
 	}
 
 	.word .done {
-	  color: #F44336;
+	  color: #fff;
 	  transform: translateX(0) scale(1);
 	}
 
@@ -305,7 +308,7 @@ Author: Alejandro Hernandez
 
 	</style>
 	<div id="contpreloader">
-	  	<div class="word">CARGANDO...</div>
+	  	<div class="word" id="preloaderword">CARGANDO...</div>
 		<div class="overlay"></div>
 	</div>
 
@@ -313,16 +316,13 @@ Author: Alejandro Hernandez
 	<div id="particles-js"></div>
 
 <!-- banner -->
+<figure class="main_area">
 	<div class="banner background background1" id="home" >
 	<img src="images/mountain3.png" class="montains">
 		<div class="cta-content">
 			<div class="header">
-				<div class="w3_menu">
-					<div class="mobile-nav-button">
-						<div class="mobile-nav-button__line"></div>
-						<div class="mobile-nav-button__line"></div>
-						<div class="mobile-nav-button__line"></div>
-					</div>
+				<div class="w3_menu mobile-nav-button">
+					<i id="menu-icon" class="fa fa-bars fa-lg"></i>
 					<nav class="mobile-menu">
 						<ul>
 							<li><a href="#home" class="active scroll" >Inicio</a></li>
@@ -494,7 +494,7 @@ Author: Alejandro Hernandez
 					
 				</div>
 	<div class="col-md-5 col-md-offset-1 person-info-agileits-w3layouts">
-		<p class="animation"><span>Oh! hello, welcome, I´m Alejandro Hernandez </span>.</p>
+		<p class="animation"><span>Oh! hello, welcome, I´m Alejandro Hernandez. </span></p>
 			<ul>
 				<li class="animation"><span>Name</span>: Alejandro Jose Hernandez Zerpa</li>
 				<li class="animation"><span>Age</span>: <a id="edadalex"></a></li>
@@ -520,77 +520,70 @@ Author: Alejandro Hernandez
 					</div>
 				</div>
 <!-- mid -->
-<section class="mid-w3layouts">
+<div class="mid-w3layouts">
 <img src="images/mountain.png" class="montains2">
 	<div class="container">
 		<h6>Iam available for freelance projects.</h6>
 		<h3>Let's <span>work</span> together indeed!</h3>
 		<a href="#contact" class="scroll">Get quotes</a>
 	</div>
-</section>
+</div>
 <!-- //mid -->
 <!--skills -->
-<div class="skills-agileinfo" id="skills" style="padding: 10em 0em;">
+<div class="skills-agileinfo" id="skills" style="padding: 0em 0em;">
+<div class="skills-overlay-fluid">
 	<div class="container">
 		<h3 class="w3_head w3_head1 white-agile">My Skills <span>My special expertise</span></h3>
 				<div class="modal-spa">
 					<div class="skills"> 
-						<div class="col-md-6 bar-grids bargrids-left">
-							<h4><span class="glyphicon glyphicon-cog"></span> Technical Skills </h4>
-							<h6>web design  <span> 80% </span></h6>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" style="width: 80%">
-								</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="ldBar-label2">HTML5</div>
+							<div style="width:100%;height:130px" data-value="80" data-type="fill" data-img="images/html5.svg" data-fill-background="#fff" data-fill-background-extrude="2" class="ldBar auto">
 							</div>
-							<h6>ui design & developer <span> 70% </span></h6>
-							<div class="progress  w3-agile">
-								<div class="progress-bar progress-bar-striped active" style="width: 70%">
-								</div>
-							</div>
-							<h6>Javascript<span>90% </span></h6>
-							<div class="progress  w3-agile">
-								<div class="progress-bar progress-bar-striped active" style="width: 90%">
-								</div>
-							</div>
-							<h6>Photoshop <span> 75% </span></h6>
-							<div class="progress  w3-agile prgs-w3agile-last">
-								<div class="progress-bar progress-bar-striped active" style="width: 75%">
-								</div>
-							</div>
-						</div> 
-						<div class="col-md-6 bar-grids  w3-agile">
-							<h4><span class="glyphicon glyphicon-briefcase"></span> Professional Skills </h4>
-							<h6>Communication<span> 85% </span></h6>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" style="width: 85%">
-								</div>
-							</div>
-							<h6>Social media marketing<span> 95% </span></h6>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" style="width: 95%">
-								</div>
-							</div>
-							<h6>Leadership<span>90% </span></h6>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" style="width: 90%">
-								</div>
-							</div>
-							<h6>Confidence<span>86% </span></h6>
-							<div class="progress prgs-w3agile-last">
-								<div class="progress-bar progress-bar-striped active" style="width: 86%">
-								</div>
-							</div> 
 						</div>
+						<div class="col-sm-3">
+							<div class="ldBar-label2">CSS3</div>
+							<div style="width:100%;height:130px" data-value="60" data-type="fill" data-img="images/css3.svg" data-fill-background="#333" data-fill-background-extrude="3" class="ldBar auto">
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="ldBar-label2">Javascript</div>
+							<div style="width:100%;height:130px" data-value="50" data-type="fill" data-img="images/javascript.svg" data-fill-background="#333" data-fill-background-extrude="2" class="ldBar auto">
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="ldBar-label2">PHP</div>
+							<div style="width:100%;height:130px" data-value="50" data-type="fill" data-img="images/php.svg" data-fill-background="#333" data-fill-background-extrude="2" class="ldBar auto">
+							</div>
+						</div>
+					</div>
+					<br><br><br><br><br>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="ldBar-label2">Mysql</div>
+							<div style="width:100%;height:130px" data-value="20" data-type="fill" data-img="images/mysql.svg" data-fill-background="#fff" data-fill-background-extrude="2" class="ldBar auto">
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="ldBar-label2">Unity</div>
+							<div style="width:100%;height:130px" data-value="20" data-type="fill" data-img="images/unity.svg" data-fill-background="#fff" data-fill-background-extrude="2" class="ldBar auto">
+							</div>
+						</div>
+					
+					</div>
 						<div class="clearfix"> </div>	
 					</div>
 				</div> 
 		</div> 
+	</div>
 </div> 
 <!-- //skills -->
 <!-- experiences -->
 
-<div class="work" id="work">
-	<div class="container">
+<section class="work" id="work" style="padding: 0em 0em;">
+<div class="work-overlay">
+	<div class="container chikobiko">
 		<h3 class="w3_head w3_head1">experience & Education <span>More about my past</span></h3>
 		<h5>Work experience</h5>
 		<div class="work-info-agileits">
@@ -645,15 +638,17 @@ Author: Alejandro Hernandez
 			<div class="clearfix"> </div>	
 		</div>
     </div>
-</div>	
+   </div>
+</section>	
 <!-- //experiences -->
 <!-- services -->
-	<div class="services" id="classes">
-		<div class="container">
+<section class="services" id="classes" style="padding: 0em 0em;">
+<div class="work-overlay">
+		<div class="container bangbang">
 			<h3 class="w3_head w3_head1">My Services <span>What I can do for you</span></h3>
 		</div>
 		<div class="agileits_services_grids_bottom">
-			<div class="container">
+			<div class="container bangbang">
 				<div class="col-md-4 agileits_service_grid_btm_left">
 					<div class="agileits_service_grid_btm_left1">
 						<div class="agileits_service_grid_btm_left2">
@@ -688,75 +683,178 @@ Author: Alejandro Hernandez
 			</div>
 		</div>
 	</div>
+</section>
 <!-- //services -->
  <!-- gallery -->
-<div class="gallery_wthree" id="gallery">
- <div class="container">
-      <h3 class="w3_head w3_head1">My Projects <span>My latest work</span></h3>
-	  <div class="gallery_grid agileits_w3layouts">
-	    <div class="col-md-6  col-sm-6 col-xs-6 grid_w3">
-			<div class="grid-1">
-				<a class="cm-overlay" href="images/gg1.jpg">
-					<img src="images/gg1.jpg" alt=" " class="img-responsive" />
+<section class="gallery_wthree" id="gallery" style="padding: 0em 0em;width: 120%;margin-left: -130px;">
+<div class="work-overlay">
+<div class="container chikobiko">
+<h3 class="w3_head w3_head1">My Projects <span>My latest work</span></h3>
+<div class="row">
+	<div class="col-md-12">
+		<div class="toolbar mb2 mt2">
+		  <button class="btn fil-cat" href="" data-rel="all">All</button>
+		  <button class="btn fil-cat" data-rel="web">Websites</button>
+		  <button class="btn fil-cat" data-rel="flyers">Flyers</button>
+		  <button class="btn fil-cat" data-rel="bcards">Business Cards</button>
+		</div> 
+		 
+		<div style="clear:both;"></div>   
+		<div id="portfolio">
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg" alt=" " class="img-responsive">
 					 <div class="w3agile-text w3agile-text-smal1">
 						<h5>Project 1</h5>
 					</div>
 				</a>
 			</div>
-			 <div class="sub_grid gallery_w3l">
-				   <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-c grid_w3l">
-						<a class="cm-overlay" href="images/gg2.jpg">
-							<img src="images/gg2.jpg" alt=" " class="img-responsive" />
-							<div class="w3agile-text w3agile-text-small full-height-w3">
-								<h5>Project 2</h5>
-					        </div>
-						</a>
-					</div>
-				   <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-b grid_w3l">
-					 	<a class="cm-overlay" href="images/gg3.jpg">
-							<img src="images/gg3.jpg" alt=" " class="img-responsive" />
-							<div class="w3agile-text w3agile-text-smal1 full-height-w3">
-								<h5>Project 3</h5>
-							</div>
-						</a>
-					</div>
-				   <div class="clearfix"></div>
-			 </div>  
-        </div>
-		<div class="col-md-6 col-sm-6 col-xs-6 grid_w3">
-		   <div class="sub_grid">
-			   <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-c grid_w3l">
-          			<a class="cm-overlay" href="images/gg4.jpg">
-						<img src="images/gg4.jpg" alt=" " class="img-responsive" />
-						<div class="w3agile-text w3agile-text-small full-height-w3">
-							<h5>Project 4</h5>
-						</div>
-					</a>
-			   </div>
-			   <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-d grid_w3l">
-					<a class="cm-overlay" href="images/gg5.jpg">
-						<img src="images/gg5.jpg" alt=" " class="img-responsive" />
-						<div class="w3agile-text w3agile-text-smal1 full-height-w3">
-							<h5>Project 5</h5>
-						</div>
-					</a>
-				</div>
-				 <div class="clearfix"></div>
-			   </div>
-		    <div class="grid-1 grid-2">
-				<a class="cm-overlay" href="images/gg6.jpg">
-					<img src="images/gg6.jpg" alt=" " class="img-responsive" />
-					<div class="w3agile-text w3agile-text-smal1">
-							<h5>Project 6</h5>
+			<div class="grid-1 tile scale-anm bcards all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 2</h5>
 					</div>
 				</a>
-		    </div>
-		   <div class="clearfix"></div>
+			</div>
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 3</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 4</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/codystretch-300x270.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/codystretch-300x270.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 5</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm flyers all">
+				<a class="cm-overlay" href="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 6</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm bcards all">
+				<a class="cm-overlay" href="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 7</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm flyers all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 8</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm flyers all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 9</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 10</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm flyers all">
+				<a class="cm-overlay" href="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 11</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/the-ninetys-brand_02-300x300.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/the-ninetys-brand_02-300x300.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 12</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm bcards all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 13</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 14</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm bcards all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 15</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg">
+					<img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 16</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm web all">
+				<a class="cm-overlay" href="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 17</h5>
+					</div>
+				</a>
+			</div>
+			<div class="grid-1 tile scale-anm bcards all">
+				<a class="cm-overlay" href="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt=" " class="img-responsive">
+					 <div class="w3agile-text w3agile-text-smal1">
+						<h5>Project 17</h5>
+					</div>
+				</a>
+			</div>
 		</div>
-		<div class="clearfix"></div>
-	  </div>	
+
+		<div style="clear:both;"></div>   
+	</div>
+</div> 
+      
+	
 </div>
 </div>
+</section>
 <!-- //gallery -->
 
 <!--footer-->
@@ -850,6 +948,8 @@ Author: Alejandro Hernandez
 </div>
 <!--//footer-->	
 
+</figure>
+<input type="hidden" id="icono-activo" value="0">
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 
@@ -858,11 +958,30 @@ Author: Alejandro Hernandez
 <!-- menu -->
 <script>
 	$(document).ready(function () {
-	  $('.mobile-nav-button').on('click', function() {
-	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
-	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");  
-	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");  
-	  
+	  $('.mobile-nav-button').on('click', function() {  
+	  	if ($('#icono-activo').val() == 0) {
+	  		var iconElement = document.getElementById('menu-icon');
+			iconate(iconElement, {
+		            from: 'fa-bars',
+		            to: 'fa-times',
+		            animation: 'rotateClockwise'
+		        }, function() {
+		            isAnimating = false;
+		        });
+			$('#icono-activo').val(1);
+	  	}
+	  	else{
+	  		var iconElement = document.getElementById('menu-icon');
+			iconate(iconElement, {
+		            from: 'fa-times',
+		            to: 'fa-bars',
+		            animation: 'rotateClockwise'
+		        }, function() {
+		            isAnimating = false;
+		        });
+			$('#icono-activo').val(0);
+	  	}
+	  	
 	  $('.mobile-menu').toggleClass('mobile-menu--open');
 	  return false;
 	}); 
@@ -956,6 +1075,8 @@ Author: Alejandro Hernandez
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/iconate.min.js"></script>
+<script type="text/javascript" src="js/loading-bar.min.js"></script>
 <script type="text/javascript" src="js/queryloader2.min.js"></script> 
 <script type="text/javascript">
 	window.addEventListener('DOMContentLoaded', function() {
@@ -965,6 +1086,7 @@ Author: Alejandro Hernandez
         jQuery("body").queryLoader2({
             onComplete: function() {
             	$("#contpreloader").fadeOut(1000);
+            	$("#preloaderword").remove();
             },
             onProgress : function(percentage) {
             },
@@ -986,6 +1108,7 @@ Author: Alejandro Hernandez
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
+	
 </script>
 <!-- start-smoth-scrolling -->
 
@@ -1036,6 +1159,19 @@ var tween2 = TweenMax.staggerFromTo('.animation', 1,
   })
   .setTween(tween2)
   .addTo(scrollMagicController);
+
+
+  var optimizerScene1 = new ScrollScene({
+        triggerElement: '#skills',
+        duration: 5000
+    })
+    .addTo(scrollMagicController)
+    .on('leave', function(e) {
+        $('body').removeClass('hide-those-stars');
+    })
+    .on('start', function(e) {
+        $('body').addClass('hide-those-stars');
+    });
   
 
  
@@ -1081,6 +1217,8 @@ var tween2 = TweenMax.staggerFromTo('.animation', 1,
             scrollProgress = 100;
         }
     })
+
+
  var camera, scene, renderer, mouseX = 0, mouseY = 0, particles = [];
     initStars();
     function initStars() {
@@ -1286,6 +1424,20 @@ $words.each( function() {
 	var $this = $( this ),
 		ticker = new Ticker( $this ).reset();
 	$this.data( 'ticker', ticker  );
+});
+
+$(function() {
+		var selectedClass = "";
+		$(".fil-cat").click(function(){ 
+		selectedClass = $(this).attr("data-rel"); 
+     $("#portfolio").fadeTo(100, 0.1);
+		$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfolio").fadeTo(300, 1);
+    }, 300); 
+		
+	});
 });
 </script>
 </html>
