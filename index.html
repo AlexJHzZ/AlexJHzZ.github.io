@@ -9,25 +9,6 @@ Author: Alejandro Hernandez
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="n"/>
 
-<!--fonts-->
-<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-<!--//fonts-->
-
-
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<link href="css/loading-bar.css" rel="stylesheet">
-<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" /><!--gallery-popup-css-->
-<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" /><!-- Pop-up -->
-<link rel="stylesheet" href="css/iconate.min.css">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-
-
-
-
-</head>
-<body style="overflow: hidden;">
 	<style>
 	@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400);
 
@@ -83,230 +64,31 @@ Author: Alejandro Hernandez
 	  top: 0;
 	}
 
-	#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 800px;
-  opacity: 0.6;
-  background-image: url("images/background4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: 1;
-}
 
-.static {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  top: -100px;
-  opacity: 0.05;
-  z-index: 230;
-  user-select: none;
-  user-drag: none;
-}
-
-.error {
-  color: #fff;
-  text-align: center;
-  font-family: 'Share Tech Mono', sans-serif;
-  font-size: 90px;
-  font-style: italic;
-  text-align: center;
-  width: 100%;
-  line-height: 60px;
-  margin: auto;
-  position: relative;
-  animation: noise 2s linear infinite;
-}
-
-.error:after {
-  content: 'Alejandro Hernandez';
-  font-family: 'Share Tech Mono', sans-serif;
-  font-size: 100px;
-  font-style: italic;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  line-height: 60px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  color: blue;
-  animation: noise-1 .2s linear infinite;
-}
-
-.info {
-  color: #fff;
-  text-align: center;
-  font-family: 'Share Tech Mono', sans-serif;
-  font-size: 15px;
-  font-style: italic;
-  text-align: center;
-  line-height: 60px;
-  margin: auto;
-  animation: noise-3 1s linear infinite;
-}
-
-.error:before {
-  content: 'Alejandro Hernandez';
-  font-family: 'Share Tech Mono', sans-serif;
-  font-size: 100px;
-  font-style: italic;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  line-height: 60px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  color: red;
-  animation: noise-2 .2s linear infinite;
-}
-
-@keyframes noise-1 {
-  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
-  10% {opacity: .1;}
-  50% {opacity: .5; left: -6px;}
-  80% {opacity: .3;}
-  100% {opacity: .6; left: 2px;}
-}
-
-@keyframes noise-2 {
-  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
-  10% {opacity: .1;}
-  50% {opacity: .5; left: 6px;}
-  80% {opacity: .3;}
-  100% {opacity: .6; left: -2px;}
-}
-
-@keyframes noise {
-  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}  
-  4.3% {opacity: 1; transform: scaleY(1.7);}
-  43% {opacity: 1; transform: scaleX(1.5);}
-}
-
-@keyframes noise-3 {
-  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
-  4.3% {opacity: 1; transform: scaleY(4);}
-  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
-}
-
-.ch-grid {
-	margin: 20px 0 0 0;
-	padding: 0;
-	list-style: none;
-	display: block;
-	text-align: center;
-	width: 100%;
-}
-
-.ch-grid:after,
-.ch-item:before {
-	content: '';
-    display: table;
-}
-
-.ch-grid:after {
-	clear: both;
-}
-
-.ch-grid li {
-	width: 220px;
-	height: 220px;
-	display: inline-block;
-	margin: 20px;
-}
-
-.ch-item {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	position: relative;
-	cursor: default;
-	box-shadow: 
-		inset 0 0 0 0 rgba(158, 158, 158, 0.35),
-		inset 0 0 0 5px rgba(255,255,255,0.6),
-		0 1px 2px rgba(0,0,0,0.1);
-	transition: all 0.4s ease-in-out;
-}
-
-.ch-img-1 { 
-	background-image: url("images/Alejandro Hernandez.jpg");
-}
-
-.ch-info {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	overflow: hidden;
-	opacity: 0;
-	transition: all 0.4s ease-in-out;
-	transform: scale(0);
-	backface-visibility: hidden;
-}
-
-.ch-info h3 {
-	color: #fff;
-	text-transform: uppercase;
-	position: relative;
-	letter-spacing: 2px;
-	font-size: 22px;
-	margin: 0 30px;
-	padding: 95px 0 0 0;
-	height: 110px;
-	font-family: 'Share Tech Mono', sans-serif;
-	text-shadow: 
-		0 0 1px #fff, 
-		0 1px 2px rgba(0,0,0,0.3);
-}
-
-.ch-info p {
-	color: #fff;
-	padding: 10px 5px;
-	font-style: italic;
-	margin: 0 30px;
-	font-size: 12px;
-	border-top: 1px solid rgba(255,255,255,0.5);
-}
-
-.ch-info p a {
-	display: block;
-	color: rgba(255,255,255,0.7);
-	font-style: normal;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 9px;
-	letter-spacing: 1px;
-	padding-top: 4px;
-	font-family: 'Share Tech Mono', sans-serif;
-}
-
-.ch-info p a:hover {
-	color: rgba(255,242,34, 0.8);
-}
-
-.ch-item:hover {
-	box-shadow: inset 0 0 0 110px rgba(158, 158, 158, 0.35), inset 0 0 0 5px rgba(255,255,255,0.8), 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.ch-item:hover .ch-info {
-	opacity: 1;
-	transform: scale(1);	
-}
 
 	</style>
+
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<!--//fonts-->
+
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet"> 
+<link href="css/loading-bar.css" rel="stylesheet">
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" /><!--gallery-popup-css-->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" /><!-- Pop-up -->
+<link rel="stylesheet" href="css/iconate.min.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+
+</head>
+<body style="overflow: hidden;">
+
 	<div id="contpreloader">
 	  	<div class="word" id="preloaderword">CARGANDO...</div>
 		<div class="overlay"></div>
@@ -366,22 +148,23 @@ Author: Alejandro Hernandez
 			</div>
 			<div class="w3_agileits_social_media">
 				<ul>
-					<li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-					<li><a href="#" class="wthree_behance"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/AlextrixVz" target="_blank" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/AJ_ROCKZ_HZ" target="_blank" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/alextrixvz/" target="_blank" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.youtube.com/user/alextrixVZ" target="_blank" class="wthree_youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/alejandro-hernandez-b74880128/" target="_blank" class="wthree_linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
         </div>
 	</div>
 <!-- //banner -->
 <!-- about -->
-<div class="about" id="about">
+<div class="about" id="about" style="background: #000;">
 
 	<div class="container">
 	<div class="row">
 	<div class="col-md-12 person-info-agileits-w3layouts">
-		<h3 class="w3_head w3_head1 animation">About Me</h3>
+		<h3 class="w3_head w3_head1 animation">About Me <span>What's up!</span></h3>
 	</div>
 	</div>
 	<br><br>
@@ -494,15 +277,15 @@ Author: Alejandro Hernandez
 					
 				</div>
 	<div class="col-md-5 col-md-offset-1 person-info-agileits-w3layouts">
-		<p class="animation"><span>Oh! hello, welcome, I´m Alejandro Hernandez. </span></p>
+		<p class="animation"><span>Oh! hello, welcome, I´m Alejandro Hernandez.</span> I'm a developer  focused on the front-end, looking develop design skills and development of VR and IA, for videogame development, I like to learn new things and teamwork.</p>
 			<ul>
 				<li class="animation"><span>Name</span>: Alejandro Jose Hernandez Zerpa</li>
 				<li class="animation"><span>Age</span>: <a id="edadalex"></a></li>
 				<li class="animation"><span>Experience</span>: +1 Year</li>
 				<li class="animation"><span>Email</span>: <a href="mailto:alejandrodategeek@gmail.com">alejandrodategeek@gmail.com</a></li>
 				<li class="animation"><span>Phone</span>: +58 (424) 130 4637</li>
-				<li class="animation"><span>Address</span>: San Martin Avenue,Palo Grande corner, Mil Centro Residence, C Tower, 4th floor, Apartment 44, Libertador Municiple, Caracas, Venezuela.</li>
-				<li class="animation"><a href="#" class="botton-w3ls">Download my CV</a>
+				<li class="animation"><span>Address</span>: San Martin Avenue,Palo Grande Corner, Mil Centro Residence, C Tower, 4th floor, Apartment 44, Libertador municipality, Caracas, Venezuela.</li>
+				<li class="animation"><a href="CV/Alejandro-Hernandez-CV.pdf" download="Alejandro-Hernandez-CV.pdf" class="button button-3d button-rounded button-raised button-primary">Download my CV</a>
 				</li>
 			</ul>
 	</div>
@@ -520,20 +303,25 @@ Author: Alejandro Hernandez
 					</div>
 				</div>
 <!-- mid -->
-<div class="mid-w3layouts">
-<img src="images/mountain.png" class="montains2">
+<div class="mid-w3layouts" style="background: #000;">
+
+<div class="container">
+
 	<div class="container">
-		<h6>Iam available for freelance projects.</h6>
-		<h3>Let's <span>work</span> together indeed!</h3>
-		<a href="#contact" class="scroll">Get quotes</a>
+		<h3 class="w3_head w3_head1 white-agile"><span>I am available for freelance projects</span>Let's work together!</h3>
+		<a href="#contact" class="scroll button button-glow button-rounded button-raised button-primary">Talk to me</a>
+		<div class="clearfix"></div>
 	</div>
+
+</div>
 </div>
 <!-- //mid -->
 <!--skills -->
-<div class="skills-agileinfo" id="skills" style="padding: 0em 0em;">
+<div class="skills-agileinfo" id="skills" style="padding: 0em 0em;position: relative;">
+<img src="images/mountain.png" class="montains2">
 <div class="skills-overlay-fluid">
 	<div class="container">
-		<h3 class="w3_head w3_head1 white-agile">My Skills <span>My special expertise</span></h3>
+		<h3 class="w3_head w3_head1 white-agile">My Skills <span>and learning more</span></h3>
 				<div class="modal-spa">
 					<div class="skills"> 
 					<div class="row">
@@ -580,60 +368,47 @@ Author: Alejandro Hernandez
 </div> 
 <!-- //skills -->
 <!-- experiences -->
-
+ 
 <section class="work" id="work" style="padding: 0em 0em;">
 <div class="work-overlay">
 	<div class="container chikobiko">
-		<h3 class="w3_head w3_head1">experience & Education <span>More about my past</span></h3>
+		<h3 class="w3_head w3_head1">experience & Education <span>Did you know it?</span></h3>
 		<h5>Work experience</h5>
 		<div class="work-info-agileits">
 			<div class="col-md-4 work-left-agileits-w3layouts">
-				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2016-Present</h6>
+				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i>December 2016 - Present</h6>
 			</div>
 			<div class="col-md-8 work-right-w3-agileits">
-				<h3>loremipsum/<span>Social Media Marketing</span></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec congue risus. In non nulla lacus. Maecenas eros sapien, eleifend quis augue eu, pellentesque tincidunt tellus</p>
-			</div>
-			<div class="clearfix"> </div>	
-		</div>
-		<div class="work-info-agileits">
-			<div class="col-md-4 work-left-agileits-w3layouts">
-				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2014-2016</h6>
-			</div>
-			<div class="col-md-8 work-right-w3-agileits">
-				<h3>loremipsum/<span>web developer</span></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec congue risus. In non nulla lacus. Maecenas eros sapien, eleifend quis augue eu, pellentesque tincidunt tellus</p>
-			</div>
-			<div class="clearfix"> </div>	
-		</div>
-		<div class="work-info-agileits">
-			<div class="col-md-4 work-left-agileits-w3layouts">
-				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2013-2014</h6>
-			</div>
-			<div class="col-md-8 work-right-w3-agileits">
-				<h3>loremipsum/<span>Designing</span></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec congue risus. In non nulla lacus. Maecenas eros sapien, eleifend quis augue eu, pellentesque tincidunt tellus</p>
+				<h3>Date Geek Group /<span> Front-End Developer</span></h3>
+				<p>I have the role of programmer and Front-End consultant for UI and web pages, among others</p>
 			</div>
 			<div class="clearfix"> </div>	
 		</div>
 		<h5 class="work2">Education</h5>
 		<div class="work-info-agileits">
 			<div class="col-md-4 work-left-agileits-w3layouts">
-				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2011-2013</h6>
+				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2002-2008</h6>
 			</div>
 			<div class="col-md-8 work-right-w3-agileits">
-				<h3>Maecenas University</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec congue risus. In non nulla lacus. Maecenas eros sapien, eleifend quis augue eu, pellentesque tincidunt tellus</p>
+				<h3>U.E.N Agustin Zamora Quintana /<span> Estudios Basicos</span></h3>
 			</div>
 			<div class="clearfix"> </div>	
 		</div>
 		<div class="work-info-agileits">
 			<div class="col-md-4 work-left-agileits-w3layouts">
-				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2008-2011</h6>
+				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2008-2013</h6>
 			</div>
 			<div class="col-md-8 work-right-w3-agileits">
-				<h3>Consectetur College</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec congue risus. In non nulla lacus. Maecenas eros sapien, eleifend quis augue eu, pellentesque tincidunt tellus</p>
+				<h3>E.B.N Liceo Venezuela /<span> Bachiller</span></h3>
+			</div>
+			<div class="clearfix"> </div>	
+		</div>
+		<div class="work-info-agileits">
+			<div class="col-md-4 work-left-agileits-w3layouts">
+				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2013-2016</h6>
+			</div>
+			<div class="col-md-8 work-right-w3-agileits">
+				<h3>Instituto Universitario Tecnologico del Oeste “Mariscal Sucre” /<span> Tecnico superior Universitario en Informatica</span></h3>
 			</div>
 			<div class="clearfix"> </div>	
 		</div>
@@ -645,7 +420,7 @@ Author: Alejandro Hernandez
 <section class="services" id="classes" style="padding: 0em 0em;">
 <div class="work-overlay">
 		<div class="container bangbang">
-			<h3 class="w3_head w3_head1">My Services <span>What I can do for you</span></h3>
+			<h3 class="w3_head w3_head1">My Services <span>Ask me, i Google it</span></h3>
 		</div>
 		<div class="agileits_services_grids_bottom">
 			<div class="container bangbang">
@@ -653,30 +428,30 @@ Author: Alejandro Hernandez
 					<div class="agileits_service_grid_btm_left1">
 						<div class="agileits_service_grid_btm_left2">
 							<i class="fa fa-desktop" aria-hidden="true"></i>
-							<h5>web development</h5>
-							<p>Maecenas sodales eu velit in varius. Phasellus vitae sem vitae urna tempus commodo.</p>
+							<h5>Web page development</h5>
+							<p>Development of responsive web pages to your liking.</p>
 						</div>
-						<img src="images/4.jpg" alt=" " class="img-responsive" />
+						<img src="images/4.jpg" alt=" " class="img-responsive" style="height: 265px;"/>
 					</div>
 				</div>
 				<div class="col-md-4 agileits_service_grid_btm_left">
 					<div class="agileits_service_grid_btm_left1">
 						<div class="agileits_service_grid_btm_left2">
-							<i class="fa fa-camera-retro" aria-hidden="true"></i>
-							<h5>Photography</h5>
-							<p>Maecenas sodales eu velit in varius. Phasellus vitae sem vitae urna tempus commodo.</p>
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+							<h5>Web system development</h5>
+							<p>Development of web systems with database design, and fulfilling the requested requirements.</p>
 						</div>
-						<img src="images/5.jpg" alt=" " class="img-responsive" />
+						<img src="images/5.jpg" alt=" " class="img-responsive" style="height: 265px;"/>
 					</div>
 				</div>
 				<div class="col-md-4 agileits_service_grid_btm_left">
 					<div class="agileits_service_grid_btm_left1">
 						<div class="agileits_service_grid_btm_left2">
-							<i class="fa fa-apple" aria-hidden="true"></i>
-							<h5>Apps development</h5>
-							<p>Maecenas sodales eu velit in varius. Phasellus vitae sem vitae urna tempus commodo.</p>
+							<i class="fa fa-handshake-o" aria-hidden="true"></i>
+							<h5>Front-End consultancy</h5>
+							<p>Availability for consulting in front-end projects.</p>
 						</div>
-						<img src="images/6.jpg" alt=" " class="img-responsive" />
+						<img src="images/6.jpg" alt=" " class="img-responsive" style="height: 265px;"/>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -948,496 +723,34 @@ Author: Alejandro Hernandez
 </div>
 <!--//footer-->	
 
+<div class="arr-w3ls">
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+
 </figure>
 <input type="hidden" id="icono-activo" value="0">
+
+
+</body>
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-
-
-<!-- Navigation-JavaScript -->
-<!-- menu -->
-<script>
-	$(document).ready(function () {
-	  $('.mobile-nav-button').on('click', function() {  
-	  	if ($('#icono-activo').val() == 0) {
-	  		var iconElement = document.getElementById('menu-icon');
-			iconate(iconElement, {
-		            from: 'fa-bars',
-		            to: 'fa-times',
-		            animation: 'rotateClockwise'
-		        }, function() {
-		            isAnimating = false;
-		        });
-			$('#icono-activo').val(1);
-	  	}
-	  	else{
-	  		var iconElement = document.getElementById('menu-icon');
-			iconate(iconElement, {
-		            from: 'fa-times',
-		            to: 'fa-bars',
-		            animation: 'rotateClockwise'
-		        }, function() {
-		            isAnimating = false;
-		        });
-			$('#icono-activo').val(0);
-	  	}
-	  	
-	  $('.mobile-menu').toggleClass('mobile-menu--open');
-	  return false;
-	}); 
-	});
-</script>
-<!-- //menu -->
-<!-- Gallery-plugin -->
-<script src="js/jquery.mobile.custom.min.js"></script>
-<script src="js/jquery.cm-overlay.js"></script>
-		<script>
-			$(document).ready(function(){
-				$('.cm-overlay').cmOverlay();
-			});
-		</script>
-<!-- //Gallery-plugin -->
-<!-- responsiveslides -->
-<script src="js/responsiveslides.min.js"></script>
-			<script>
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									 // Slideshow 4
-									$("#slider3").responsiveSlides({
-										auto: true,
-										pager: false,
-										nav: true,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-									$('.events').append("<li>before event fired.</li>");
-									},
-									after: function () {
-										$('.events').append("<li>after event fired.</li>");
-										}
-										});
-										});
-			</script>
-<!-- //responsiveslides -->
-
-	<!-- //Navigation-JavaScript -->
-<!--pop-up-box -->
-					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-					<script>
-					$(document).ready(function() {
-					$('.popup-with-zoom-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-					});
-
-					});
-					</script>
-<!-- //pop-up-box -->
-
-<!-- banner-type-text -->
-	<script src="js/typed.js" type="text/javascript"></script>
-    <script>
-		$(function(){
-
-			$("#typed").typed({
-				// strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-				stringsElement: $('#typed-strings'),
-				typeSpeed: 30,
-				backDelay: 500,
-				loop: true,
-				contentType: 'html', // or text
-				// defaults to false for infinite loop
-				loopCount: true,
-				callback: function(){ foo(); },
-				resetCallback: function() { newTyped(); }
-			});
-
-			$(".reset").click(function(){
-				$("#typed").typed('reset');
-			});
-
-		});
-
-		function newTyped(){ /* A new typed object */ }
-
-		function foo(){ console.log("Callback"); }
-    </script>
-<!-- //banner-type-text -->
-<!-- jarallax-js -->
-			<script src="js/SmoothScroll.min.js"></script>
-<!-- start-smoth-scrolling -->
+<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery.cm-overlay.js" type="text/javascript"></script>
+<script src="js/responsiveslides.min.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script src="js/typed.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="js/iconate.min.js"></script>
 <script type="text/javascript" src="js/loading-bar.min.js"></script>
 <script type="text/javascript" src="js/queryloader2.min.js"></script> 
-<script type="text/javascript">
-	window.addEventListener('DOMContentLoaded', function() {
-
-        /* Loader - Remove it to disable loader
-        ================================================== */
-        jQuery("body").queryLoader2({
-            onComplete: function() {
-            	$("#contpreloader").fadeOut(1000);
-            	$("#preloaderword").remove();
-            },
-            onProgress : function(percentage) {
-            },
-            showbar: "on",
-            barColor: "#fff",
-            textColor: "#fff",
-            backgroundColor: "#212121",
-            overlayId: 'qLoverlay',
-            barHeight: 12,
-            percentage: true,
-            deepSearch: true,
-            completeAnimation: "fade",
-            minimumTime: 500 
-        });
-    });
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-	
-</script>
-<!-- start-smoth-scrolling -->
-
-	
-	<div class="arr-w3ls">
-	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	</div>
-<!-- //smooth scrolling -->
-
-
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/particles.min.js"></script>
-
-    <script data-cfasync="false" src="js/TweenMax.min.js"></script>
+<script data-cfasync="false" src="js/TweenMax.min.js"></script>
 <script data-cfasync="false" src="js/jquery.scrollmagic.min.js"></script>
-
 <script data-cfasync="false" src="js/Three.js"></script>
-<script type="text/javascript">
-
-
-$(function() {
-  
-  var scrollMagicController = new ScrollMagic();
-
-
-
-var tween2 = TweenMax.staggerFromTo('.animation', 1,
-    {
-        opacity: 0,
-    	y: 50,
-        x: -50,
-    },
-    {
-        y: 0,
-        x: 0,
-        opacity: 1
-    },
-    0.4 /* Stagger duration */
-);
-
-  var scene1 = new ScrollScene({
-    triggerElement: '#about',
-    triggerHook: 'onEnter',
-    offset: 203,
-    duration: 500
-  })
-  .setTween(tween2)
-  .addTo(scrollMagicController);
-
-
-  var optimizerScene1 = new ScrollScene({
-        triggerElement: '#skills',
-        duration: 5000
-    })
-    .addTo(scrollMagicController)
-    .on('leave', function(e) {
-        $('body').removeClass('hide-those-stars');
-    })
-    .on('start', function(e) {
-        $('body').addClass('hide-those-stars');
-    });
-  
-
- 
-});
-
-
-
-	fillTopper();
-    var topperHeight = $(window).height()
-    var scrollProgress = 100;
-    var topperScrollMagicController = new ScrollMagic({
-        globalSceneOptions: {
-            triggerHook: 'onLeave'
-        }
-    });
-
-    var topperTextTween = TweenMax.staggerFromTo('#home h1 span', 0.5,
-        {
-            y: 25,
-            opacity: 0
-        },
-        {
-            y: 0,
-            opacity: 1
-        },
-        0.075
-    );
-
-	function getTopperHeight() {
-        return topperHeight / 1.5;
-    }
-	var starScene = new ScrollScene({
-        triggerElement: '#home',
-        duration: getTopperHeight,
-        offset: 0
-    })
-    .addTo(topperScrollMagicController)
-    .setTween(topperTextTween)
-    //.setPin('#home')
-    .on('progress', function(e) {
-        scrollProgress = e.progress * 100 * 2;
-        if (scrollProgress <= 5) {
-            scrollProgress = 100;
-        }
-    })
-
-
- var camera, scene, renderer, mouseX = 0, mouseY = 0, particles = [];
-    initStars();
-    function initStars() {
-        camera = new THREE.PerspectiveCamera(80, $('#home').width() / $('#home').height(), 1, 4000 );
-        camera.position.z = 1000;
-        scene = new THREE.Scene();
-        scene.add(camera);
-        renderer = new THREE.CanvasRenderer();
-        renderer.setSize( $('#home').width(), $('#home').height() );
-        document.getElementById('home').appendChild( renderer.domElement );
-        makeParticles();
-        document.addEventListener( 'mousemove', onMouseMove, false );
-        setInterval(update,1000/30);
-    }
-    function update() {
-        updateParticles();
-        renderer.render( scene, camera );
-    }
-    function makeParticles() {
-        var particle, material;
-        for ( var zpos= -1000; zpos < 1000; zpos+=5 ) {
-            material = new THREE.ParticleCanvasMaterial( { color: 0xffffff, program: particleRender } );
-            particle = new THREE.Particle(material);
-            particle.position.x = Math.random() * 1000 - 500;
-            particle.position.y = Math.random() * 1000 - 500;
-            particle.position.z = zpos;
-            particle.scale.x = particle.scale.y = 1;
-            scene.add( particle );
-            particles.push(particle);
-        }
-    }
-    function particleRender( context ) {
-        context.beginPath();
-        context.arc( 0, 0, 1, 0,  Math.PI * 2, true );
-        context.fill();
-    };
-    function updateParticles() {
-        for(var i=0; i<particles.length; i++) {
-            particle = particles[i];
-            particle.position.z +=  scrollProgress * 0.1;
-            if(particle.position.z>1000) particle.position.z-=2000;
-        }
-    }
-    function onMouseMove( event ) {
-        // Do nothing, based on scroll
-    }
-
-    function fillTopper() {
-    $('#home').height($(window).height());
-	}
-
-
-</script>
 <script src="js/jquery.lettering-0.6.1.min.js"></script>
+<script src="js/main.js"></script>
 
-        <script type="text/javascript">
-			$(document).ready(function(){
-			        //.parallax(xPosition, speedFactor, outerHeight) options:
-			        //xPosition - Horizontal position of the element
-			        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-			        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-			        $("body").niceScroll({
-						cursorcolor:"#fff",
-						cursorwidth:"10px",
-						background:"rgba(20,20,20,0.3)",
-						cursorborder:"1px solid #fff",
-						cursorborderradius:"5px",
-						scrollspeed: 50, // scrolling speed
-    					mousescrollstep: 30,
-						zindex: 1050
-					});
-			});
-			</script>
-
-</body>
-
-<script type="text/javascript">
-
-    var fecha="11-05-1995";
-        // Si la fecha es correcta, calculamos la edad
-        var values=fecha.split("-");
-        var dia = values[0];
-        var mes = values[1];
-        var ano = values[2];
- 
-        // cogemos los valores actuales
-        var fecha_hoy = new Date();
-        var ahora_ano = fecha_hoy.getYear();
-        var ahora_mes = fecha_hoy.getMonth()+1;
-        var ahora_dia = fecha_hoy.getDate();
- 
-        // realizamos el calculo
-        var edad = (ahora_ano + 1900) - ano;
-        if ( ahora_mes < mes )
-        {
-            edad--;
-        }
-        if ((mes == ahora_mes) && (ahora_dia < dia))
-        {
-            edad--;
-        }
-        if (edad > 1900)
-        {
-            edad -= 1900;
-        }
- 
-        // calculamos los meses
-        var meses=0;
-        if(ahora_mes>mes)
-            meses=ahora_mes-mes;
-        if(ahora_mes<mes)
-            meses=12-(mes-ahora_mes);
-        if(ahora_mes==mes && dia>ahora_dia)
-            meses=11;
- 
-        // calculamos los dias
-        var dias=0;
-        if(ahora_dia>dia)
-            dias=ahora_dia-dia;
-        if(ahora_dia<dia)
-        {
-            ultimoDiaMes=new Date(ahora_ano, ahora_mes, 0);
-            dias=ultimoDiaMes.getDate()-(dia-ahora_dia);
-        }
- 		if(edad==1){
- 			document.getElementById("edadalex").innerHTML=edad+" Year";
- 		}
- 		else{
- 			document.getElementById("edadalex").innerHTML=edad+" Years";
- 		}
-	function Ticker( elem ) {
-	elem.lettering();
-	this.done = false;
-	this.cycleCount = 5;
-	this.cycleCurrent = 0;
-	this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+{}|[]\\;\':"<>?,./`~'.split('');
-	this.charsCount = this.chars.length;
-	this.letters = elem.find( 'span' );
-	this.letterCount = this.letters.length;
-	this.letterCurrent = 0;
-
-	this.letters.each( function() {
-		var $this = $( this );
-		$this.attr( 'data-orig', $this.text() );
-		$this.text( '-' );
-	});
-}
-
-Ticker.prototype.getChar = function() {
-	return this.chars[ Math.floor( Math.random() * this.charsCount ) ];
-};
-
-Ticker.prototype.reset = function() {
-	this.done = false;
-	this.cycleCurrent = 0;
-	this.letterCurrent = 0;
-	this.letters.each( function() {
-		var $this = $( this );
-		$this.text( $this.attr( 'data-orig' ) );
-		$this.removeClass( 'done' );
-	});
-	this.loop();
-};
-
-Ticker.prototype.loop = function() {
-	var self = this;
-
-	this.letters.each( function( index, elem ) {
-		var $elem = $( elem );
-		if( index >= self.letterCurrent ) {
-			if( $elem.text() !== ' ' ) {
-				$elem.text( self.getChar() );
-				$elem.css( 'opacity', Math.random() );
-			}
-		}
-	});
-
-	if( this.cycleCurrent < this.cycleCount ) {
-		this.cycleCurrent++;
-	} else if( this.letterCurrent < this.letterCount ) {
-		var currLetter = this.letters.eq( this.letterCurrent );
-		this.cycleCurrent = 0;
-		currLetter.text( currLetter.attr( 'data-orig' ) ).css( 'opacity', 1 ).addClass( 'done' );
-		this.letterCurrent++;
-	} else {
-		this.done = true;
-	}
-
-	if( !this.done ) {
-		requestAnimationFrame( function() {
-			self.loop();
-		});
-	} else {
-		setTimeout( function() {
-			self.reset();
-		}, 750 );
-	}
-};
-
-$words = $( '.word' );
-
-$words.each( function() {
-	var $this = $( this ),
-		ticker = new Ticker( $this ).reset();
-	$this.data( 'ticker', ticker  );
-});
-
-$(function() {
-		var selectedClass = "";
-		$(".fil-cat").click(function(){ 
-		selectedClass = $(this).attr("data-rel"); 
-     $("#portfolio").fadeTo(100, 0.1);
-		$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
-    setTimeout(function() {
-      $("."+selectedClass).fadeIn().addClass('scale-anm');
-      $("#portfolio").fadeTo(300, 1);
-    }, 300); 
-		
-	});
-});
-</script>
 </html>
