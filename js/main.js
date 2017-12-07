@@ -194,14 +194,7 @@ var tween2 = TweenMax.staggerFromTo('.animation', 1,
     0.4 /* Stagger duration */
 );
 
-  var scene1 = new ScrollScene({
-    triggerElement: '#about',
-    triggerHook: 'onEnter',
-    offset: 203,
-    duration: 500
-  })
-  .setTween(tween2)
-  .addTo(scrollMagicController);
+
 
 
   var optimizerScene1 = new ScrollScene({

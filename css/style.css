@@ -253,7 +253,7 @@ ul.dropdown-menu.agile_short_dropdown > li > a:hover{
 }
 .mobile-menu ul li a:after {
 	content: '';
-	background: #FFEB3B;
+	background: #209af4;
 	width: 100%;
 	height: 100%;
 	position: absolute;
