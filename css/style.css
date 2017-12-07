@@ -148,7 +148,7 @@ p.banner-p-w3ls {
 .mobile-nav-button {
     position: fixed;
     margin: 4.3em 0em 0;
-    right: 2.5%;
+    right: 1%;
     top: -2.5%;
     z-index: 999;
     cursor: pointer;
@@ -536,14 +536,14 @@ li.dropdown.act a.w3_icons_act {
 	padding-right:8px;
 }
 .work-right-w3-agileits h3 {
-    color: #FFEB3B;
+    color: #fff;
     font-size: 25px;
     text-transform: capitalize;
     letter-spacing: 1.5px;
     margin-bottom: 12px;
 }
 .work-right-w3-agileits h3 span {
-    color: #088ef0;
+    color: #fff;
     font-weight: 400;
     font-size: 25px!important;
 }
@@ -689,8 +689,8 @@ h3.w3_head.w3_head1 span {
     visibility: visible;
 }
 .agileits_service_grid_btm_left2 h5 {
-    margin: 0em 0 .5em;
-    color: #FFEB3B;
+    margin: 2em 0 .5em;
+    color: #fff;
     font-size: 1.5em;
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -714,6 +714,7 @@ h3.w3_head.w3_head1 span {
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
     height: 100%;
 }
 .agileits_service_grid_btm_left1:hover {
@@ -942,7 +943,7 @@ section.mid-w3layouts a:hover {
     font-size: 2em;
     color: #fff;
     text-align: center;
-    padding: 3em 0 0;
+    padding: 2em 10px 0;
 }
 .w3agile-text.w3agile-text-small h5, .grid_w3l .w3agile-text h5 {
     font-size: 2em;
@@ -1179,7 +1180,8 @@ a.agilebtn {
 }
 .contact-agileits-w3layouts {
     padding: 35px 60px;
-    background: #FFEB3B;
+    background: #222;
+    height: 390px;
 }
 .contact-map-right {
     padding: 0;
@@ -1191,10 +1193,10 @@ a.agilebtn {
 .contact-agileits-w3layouts input[type="text"],.contact-agileits-w3layouts input[type="email"],.contact-agileits-w3layouts textarea{
 	outline: none;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #9E9E9E;
     padding: 7px 10px;
     background: transparent;
-    color: #fff;
+    color: #9E9E9E;
     font-size: 14px;
     width: 100%;
 }
@@ -1234,19 +1236,19 @@ a.agilebtn {
 /*--placeholder-color--*/
 
 ::-webkit-input-placeholder{
-	color:rgba(255, 255, 255, 0.65);
+	color:#9E9E9E;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(255, 255, 255, 0.65); 
+   color: #9E9E9E; 
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(255, 255, 255, 0.65);  
+   color: #9E9E9E;  
 }
 
 :-ms-input-placeholder {  
-   color: rgba(255, 255, 255, 0.65);  
+   color: #9E9E9E;  
 }
 /*--//placeholder-color--*/
 
@@ -1611,7 +1613,8 @@ a.callbacks_nav.callbacks1_nav.prev {
     height: 32px;
     border: none;
     text-indent: 100%;
-    background: url(../images/arr.png) no-repeat 0px 0px;
+    background: url(../images/up-arrow.svg) no-repeat 0px 0px;
+    background-size: cover;
 }
 #toTopHover {
     width: 32px;
@@ -1702,7 +1705,7 @@ a.callbacks_nav.callbacks1_nav.prev {
 	}
 	.mobile-nav-button {
 		margin: 3.7em 0em 0;
-		right: 3%;
+		right: 1%;
 	}
 	.agile_banner_info {
 		margin: 3em 0 0em 3em;
@@ -3710,12 +3713,12 @@ section:nth-child(even) {
     background-size: cover;
 }
 #classes {
-    background: url(../images/gg6.jpg) no-repeat 100% 100%;
+    background: url(../images/classes.jpg) no-repeat 100% 100%;
     background-size: cover;
 }
 
 #gallery {
-    background-attachment: fixed;
+    background: url(../images/gallery.jpg) no-repeat 100% 100%;
     background-size: cover;
 }
 
@@ -3784,7 +3787,7 @@ section:nth-child(even) {
     border: 1px solid;
     vertical-align: middle;
     -webkit-appearance: none;
-    color: #555;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -4028,4 +4031,18 @@ section:nth-child(even) {
 
 .parallax-window {
     background: transparent;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.modal p{
+    color: #fff;
+}
+
+.lang-p img{
+    display: inline-block;
+
 }

@@ -82,8 +82,8 @@ $words.each( function() {
         ================================================== */
         jQuery("body").queryLoader2({
             onComplete: function() {
-            	$("#contpreloader").fadeOut(1000);
-            	$("#preloaderword").remove();
+                $("#contpreloader").fadeOut(1000);
+                $("#preloaderword").remove();
             },
             onProgress : function(percentage) {
             },
@@ -139,37 +139,10 @@ $words.each( function() {
 	  $('.mobile-menu').toggleClass('mobile-menu--open');
 	  return false;
 	}); 
-	$('.cm-overlay').cmOverlay();
-					$('.popup-with-zoom-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-					});
 
 
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									 // Slideshow 4
-									$("#slider3").responsiveSlides({
-										auto: true,
-										pager: false,
-										nav: true,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-									$('.events').append("<li>before event fired.</li>");
-									},
-									after: function () {
-										$('.events').append("<li>after event fired.</li>");
-										}
-										});
-										});
+
+
 		$(function(){
 
 			$("#typed").typed({
@@ -411,3 +384,65 @@ var tween2 = TweenMax.staggerFromTo('.animation', 1,
  		
 
 	}); 
+
+        function enviarContacpage() {
+    namesinput = $('#contacpagename').val();
+    emailinput = $('#contacpageemail').val();
+    telefonoinput = $('#contacpagetel').val();
+    contacmsginput = $('#contacpagemessage').val();
+    expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (namesinput == 0 || namesinput == null) {
+        alert("Introduzca su nombre.");
+        $('#contacpagename').focus();
+        return false;
+    } else if (!expr.test(emailinput)) {
+        alert("Introduzca una direccion valida de Email.");
+        $('#contacpageemail').focus();
+        return false;
+    } else if (telefonoinput == 0 || telefonoinput == null) {
+        alert("Introduzca su Telefono de contacto.");
+        $('#contacpagetel').focus();
+        return false;
+    } else if (contacmsginput == 0 || contacmsginput == null) {
+        alert("Introduzca su mensaje.");
+        $('#contacpagemessage').focus();
+        return false;
+    }
+    datos = {
+        "namesinput": namesinput,
+        "emailinput": emailinput,
+        "telefonoinput": telefonoinput,
+        "contacmsginput": contacmsginput
+    };
+    document.getElementById('contact_form').reset();
+    $('#notificacionform').modal('toggle');
+    $.ajax({
+        contentType: "text/xml;charset=utf-8",
+        url: 'inc/CorreoContacto.php',
+        data: datos,
+        success: function(data) {
+        }
+    });
+}
+
+jQuery(function(){
+        $('#contacpagetel').mask('(+00)0000-00000000');
+        
+
+    });
+
+$( "#portfolio a" ).click(function( event ) {
+  event.preventDefault();
+});
+
+function showportfolio(val){
+    $('#portfolio-modal'+val).modal('toggle');
+}
+
+window.onload = function() {
+  var elevator = new Elevator({
+    element: document.querySelector('.elevator-button'),
+    mainAudio: 'music/elevator.mp3',
+    endAudio: 'music/ding.mp3'
+  });
+}
