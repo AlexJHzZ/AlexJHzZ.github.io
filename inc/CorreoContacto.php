@@ -61,7 +61,7 @@ $mensaje = '
 	</table>
 	<br><br>
 	<div style="background-color:#eeeeee;font-size:10px;line-height:11px">
-	Formulario enviado desde el sitio web: <a href="http://superatec.org.ve/" target="_blank">http://alextrixvz.github.io</a></div><div style="background-color:#eeeeee;font-size:10px;line-height:11px">Dirección IP del visitante: '.$ip.'</div></div>';
+	Formulario enviado desde el sitio web: <a href="http://alextrixvz.github.io" target="_blank">http://alextrixvz.github.io</a></div><div style="background-color:#eeeeee;font-size:10px;line-height:11px">Dirección IP del visitante: '.$ip.'</div></div>';
 
 enviarEmail($mensaje, $name);
 
@@ -92,6 +92,8 @@ function enviarEmail($mensaje, $cliente){
 		    $mail->Port       = 465;  
 		    $mail->SMTPAuth = true;
 		    $mail->SMTPSecure = "ssl"; 
+		    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+			$mail->SMTPDebug = 1; //Alternative to above constant
 		    
 		    //Sustituye  ( CuentaDeEnvio )  por la cuenta desde la que deseas enviar por ejem. prueba@domitienda.com  
 		    $mail->From     = "alejandrodategeek@gmail.com";
