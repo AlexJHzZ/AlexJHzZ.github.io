@@ -97,7 +97,7 @@ function enviarEmail($mensaje, $cliente){
 		    
 		    //Sustituye  ( CuentaDeEnvio )  por la cuenta desde la que deseas enviar por ejem. prueba@domitienda.com  
 		    $mail->From     = "alejandrodategeek@gmail.com";
-		    $mail->FromName = "alejandro";
+		    $mail->FromName = "Alextrixvz";
 		    $mail->Subject  = "Formulario Contacto-".$cliente;
 		    $mail->AltBody  = ""; 
 		    $mail->IsHTML(true);
@@ -108,7 +108,7 @@ function enviarEmail($mensaje, $cliente){
 		    $mail->SMTPAuth = true;
 
 		    // Sustituye (CuentaDeEnvio )  por la misma cuenta que usaste en la parte superior en este caso  prueba@midominio.com  y sustituye (ContraseñaDeEnvio)  por la contraseña que tenga dicha cuenta 
-		    $mail->Username = "correodepruebasalemoni@gmail.com";
+		    $mail->Username = "alejandrodategeek@gmail.com";
 		    $mail->Password = "14072010Monica"; 
 		    $mail->Send();
 
