@@ -411,10 +411,9 @@ var tween2 = TweenMax.staggerFromTo('.animation', 1,
     $('#notificacionform').modal('toggle');
     $.ajax({
         contentType: "text/xml;charset=utf-8",
-        url: 'inc/CorreoContacto.php',
+        url: ' http://pruebadategeek.epizy.com/CorreoContacto.php',
         data: datos,
         success: function(data) {
-            alert(data)
         }
     });
 }
