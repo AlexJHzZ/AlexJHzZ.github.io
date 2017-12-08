@@ -409,11 +409,12 @@ var tween2 = TweenMax.staggerFromTo('.animation', 1,
     };
     document.getElementById('contact_form').reset();
     $('#notificacionform').modal('toggle');
-    $.ajax({
+    $.post({
         contentType: "text/xml;charset=utf-8",
         url: 'inc/CorreoContacto.php',
         data: datos,
         success: function(data) {
+            alert(data)
         }
     });
 }
