@@ -1635,9 +1635,6 @@ a.callbacks_nav.callbacks1_nav.prev {
 	
 }
 @media(max-width:1440px){
-	.banner {
-		min-height: 800px;
-	}
 	.banner-image-w3layouts img {
 		width: 315px;
 	}
@@ -2552,6 +2549,7 @@ a.callbacks_nav.callbacks1_nav.prev {
 
 #home {
     position: relative;
+    overflow: hidden;
 }
 
 #home .montains{
