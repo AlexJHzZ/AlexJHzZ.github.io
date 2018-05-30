@@ -1,3 +1,7 @@
+$('.js-tilt').tilt({
+    scale: 1.1
+})
+
 		function Ticker( elem ) {
 	elem.lettering();
 	this.done = false;
